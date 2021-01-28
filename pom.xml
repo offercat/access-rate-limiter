@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.offercat</groupId>
+    <artifactId>access-rate-limiter</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <modules>
+        <module>access-rate-limiter-core</module>
+        <module>access-rate-limiter-stater</module>
+    </modules>
+
+    <name>access-rate-limiter</name>
+    <description>一键配置限流框架</description>
+    <inceptionYear>2020</inceptionYear>
+
+    <!-- 开发者信息 -->
+    <developers>
+        <developer>
+            <id>xutong</id>
+            <name>徐通</name>
+            <email>myimpte@163.com</email>
+        </developer>
+    </developers>
+
+    <!-- 项目版本控制系统信息，即：git地址 -->
+    <scm>
+        <url>https://github.com/offercat/access-rate-limiter</url>
+    </scm>
+
+    <!-- 邮件地址 -->
+    <mailingLists>
+        <mailingList>
+            <name>Development List</name>
+            <subscribe>myimpte@163.com</subscribe>
+            <unsubscribe>myimpte@163.com</unsubscribe>
+            <post>myimpte@163.com</post>
+        </mailingList>
+        <mailingList>
+            <name>Commits List</name>
+            <subscribe>myimpte@163.com</subscribe>
+            <unsubscribe>myimpte@163.com</unsubscribe>
+            <post>myimpte@163.com</post>
+        </mailingList>
+        <mailingList>
+            <name>Issues List</name>
+            <subscribe>myimpte@163.com</subscribe>
+            <unsubscribe>myimpte@163.com</unsubscribe>
+            <post>myimpte@163.com</post>
+        </mailingList>
+    </mailingLists>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
